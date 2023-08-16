@@ -2,13 +2,15 @@
 {
     internal class Program
     {
+        private const string FILE_NAME = "usercounts.txt";
+
         static async Task Main(string[] args)
         {
-            if (!File.Exists(args[0]))
+            if (!File.Exists(FILE_NAME))
             {
                 await File.Create(args[0]).DisposeAsync();
             }
-            var userCounts = (await File.ReadAllLinesAsync(args[0])).ToDictionary(line => line.Split(' ')[0], line => int.Parse(line.Split(' ')[1]));
+            var userCounts = (await File.ReadAllLinesAsync(FILE_NAME)).ToDictionary(line => line.Split(' ')[0], line => int.Parse(line.Split(' ')[1]));
             Console.WriteLine("Please enter your name:");
             var name = Console.ReadLine() ?? string.Empty;
             if (!userCounts.ContainsKey(name))
@@ -29,7 +31,7 @@
                     Console.WriteLine($"Hello, my good friend {name}!");
                 }
             }
-            await File.WriteAllLinesAsync(args[0], userCounts.Select(entry => $"{entry.Key} {entry.Value}"));
+            await File.WriteAllLinesAsync(FILE_NAME, userCounts.Select(entry => $"{entry.Key} {entry.Value}"));
         }
     }
 }
