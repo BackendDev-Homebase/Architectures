@@ -1,6 +1,6 @@
 ﻿namespace Layered2.DataAcess
 {
-    internal interface IDataAcessLayer
+    internal interface IDataAccessLayer
     {
         internal Task StoreUserCounts(Dictionary<string, int> userCounts);
 

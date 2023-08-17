@@ -1,14 +1,13 @@
-﻿using Layered.DataAcess;
-using Layered2.BusinesLogic;
+﻿using Layered2.BusinesLogic;
 using Layered2.DataAcess;
 
 namespace Layered.BusinesLogic
 {
     internal class BusinessLogicLayer : IBusinessLogicLayer
     {
-        private readonly IDataAcessLayer _dal;
+        private readonly IDataAccessLayer _dal;
 
-        public BusinessLogicLayer(IDataAcessLayer dal)
+        public BusinessLogicLayer(IDataAccessLayer dal)
         {
             _dal = dal;
         }
@@ -16,6 +15,7 @@ namespace Layered.BusinesLogic
         public async Task<string> Greet(string name)
         {
             var userCounts = await _dal.LoadUserCounts();
+
             string greetingMessage;
             if (!userCounts.ContainsKey(name))
             {
@@ -35,7 +35,9 @@ namespace Layered.BusinesLogic
                     greetingMessage = $"Hello, my good friend {name}!";
                 }
             }
+
             await _dal.StoreUserCounts(userCounts);
+
             return greetingMessage;
         }
     }

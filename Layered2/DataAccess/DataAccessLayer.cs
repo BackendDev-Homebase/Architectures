@@ -2,7 +2,7 @@
 
 namespace Layered.DataAcess
 {
-    internal class DataAcessLayer : IDataAcessLayer
+    internal class DataAccessLayer : IDataAccessLayer
     {
         public async Task StoreUserCounts(Dictionary<string, int> userCounts)
         {
