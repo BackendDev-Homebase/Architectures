@@ -6,7 +6,7 @@ namespace Layered2
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             var ui = new PresentationLayer(new BusinessLogicLayer(new DataAcessLayer()));
             await ui.Greet();

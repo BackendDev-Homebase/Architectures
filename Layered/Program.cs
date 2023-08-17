@@ -4,7 +4,7 @@ namespace Layered
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             var ui = new PresentationLayer();
             ui.Greet();
