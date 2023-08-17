@@ -8,6 +8,7 @@ namespace Layered.BusinesLogic
         {
             var dal = new DataAcessLayer();
             var userCounts = await dal.LoadUserCounts();
+
             string greetingMessage;
             if (!userCounts.ContainsKey(name))
             {
@@ -27,7 +28,9 @@ namespace Layered.BusinesLogic
                     greetingMessage = $"Hello, my good friend {name}!";
                 }
             }
+
             await dal.StoreUserCounts(userCounts);
+
             return greetingMessage;
         }
     }
