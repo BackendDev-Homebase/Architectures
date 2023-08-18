@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1 - Monolith", "Monolith\1 - Monolith.csproj", "{7709084D-C0CB-45CF-A0A0-7FD95129B404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monolith", "Monolith\Monolith.csproj", "{7709084D-C0CB-45CF-A0A0-7FD95129B404}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2 - Layered", "Layered\2 - Layered.csproj", "{89A57E29-BED3-473B-97A0-0457A047BC4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layered", "Layered\Layered.csproj", "{89A57E29-BED3-473B-97A0-0457A047BC4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3 - Layered2", "Layered2\3 - Layered2.csproj", "{B6614821-76C1-4E4E-B15A-D5DCC3671A15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Layered2", "Layered2\Layered2.csproj", "{B6614821-76C1-4E4E-B15A-D5DCC3671A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4 - Concentric", "clean\4 - Concentric.csproj", "{8CA2D69E-BFD1-460F-A24F-A6EC80F5E79C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concentric", "clean\Concentric.csproj", "{8CA2D69E-BFD1-460F-A24F-A6EC80F5E79C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IODA", "IODA\IODA.csproj", "{BAE8D864-E04A-40D3-B5EF-6687012AAE04}"
 EndProject
