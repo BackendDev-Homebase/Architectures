@@ -6,14 +6,14 @@
 
         internal async Task<string[]> Load()
         {
-            // Integration
+            // Operation
             var result = await File.ReadAllLinesAsync(_path);
             return result;
         }
 
         internal async Task Store(string[] lines)
         {
-            // Integration
+            // Operation
             await File.WriteAllLinesAsync(_path, lines);
         }
     }

@@ -1,9 +1,9 @@
-﻿using IODA.Adapters.Dialogs;
+﻿using IODA.Adapters.Portals.Dialogs;
 using IODA.Adapters.Providers;
 using IODA.Data;
 using IODA.Domain;
 
-namespace IODA
+namespace IODA.Adapters.Portals.Controllers
 {
     internal class Controller
     {
@@ -19,7 +19,7 @@ namespace IODA
 
         internal async Task Run()
         {
-            // Integration
+            // Entry Point
             var lines = await _da.Load();
             var userCounts = UserCounts.Create(lines);
 

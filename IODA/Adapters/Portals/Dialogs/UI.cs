@@ -1,10 +1,10 @@
-﻿namespace IODA.Adapters.Dialogs
+﻿namespace IODA.Adapters.Portals.Dialogs
 {
     internal class UI
     {
         internal string GetName()
         {
-            // Integration
+            // Operation
             Display("Please enter your name:");
             var name = Console.ReadLine() ?? string.Empty;
             return name;
@@ -12,7 +12,7 @@
 
         internal void Display(string message)
         {
-            // Integration
+            // Operation
             Console.WriteLine(message);
         }
     }
