@@ -6,10 +6,6 @@
 
         static async Task Main()
         {
-            if (!File.Exists(FILE_NAME))
-            {
-                await File.Create(FILE_NAME).DisposeAsync();
-            }
             var userCounts = (await File.ReadAllLinesAsync(FILE_NAME))
                 .ToDictionary(line => line.Split(' ')[0], line => int.Parse(line.Split(' ')[1]));
             Console.WriteLine("Please enter your name:");
