@@ -6,7 +6,7 @@ namespace Layered2.Presentation
     {
         private readonly IBusinessLogicLayer _bll;
 
-        public PresentationLayer(IBusinessLogicLayer bll)
+        internal PresentationLayer(IBusinessLogicLayer bll)
         {
             _bll = bll;
         }
