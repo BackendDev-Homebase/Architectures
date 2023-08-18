@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-        private const string FILE_NAME = "usercounts.txt";
+        private static readonly string _path = Path.Combine(Environment.CurrentDirectory, "../../../../Data/usercounts.txt");
 
         static async Task Main()
         {
-            var userCounts = (await File.ReadAllLinesAsync(FILE_NAME))
+            var userCounts = (await File.ReadAllLinesAsync(_path))
                 .ToDictionary(line => line.Split(' ')[0], line => int.Parse(line.Split(' ')[1]));
             Console.WriteLine("Please enter your name:");
             var name = Console.ReadLine() ?? string.Empty;
@@ -28,7 +28,7 @@
                     Console.WriteLine($"Hello, my good friend {name}!");
                 }
             }
-            await File.WriteAllLinesAsync(FILE_NAME, userCounts.Select(entry => $"{entry.Key} {entry.Value}"));
+            await File.WriteAllLinesAsync(_path, userCounts.Select(entry => $"{entry.Key} {entry.Value}"));
         }
     }
 }
