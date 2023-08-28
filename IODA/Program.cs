@@ -8,6 +8,7 @@ namespace IODA
     {
         static async Task Main()
         {
+            // Entry Point
             var ui = new UI();
             var da = new DataAccess();
             var app = new Controller(ui, da);

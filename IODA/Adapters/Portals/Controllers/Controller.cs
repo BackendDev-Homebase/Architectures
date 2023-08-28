@@ -19,7 +19,7 @@ namespace IODA.Adapters.Portals.Controllers
 
         internal async Task Run()
         {
-            // Entry Point
+            // Integration
             var lines = await _da.Load();
             var userCounts = UserCounts.Create(lines);
 
