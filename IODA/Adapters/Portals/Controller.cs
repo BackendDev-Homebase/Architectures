@@ -1,9 +1,8 @@
-﻿using IODA.Adapters.Portals.Dialogs;
-using IODA.Adapters.Providers;
+﻿using IODA.Adapters.Providers;
 using IODA.Data;
 using IODA.Domain;
 
-namespace IODA.Adapters.Portals.Controllers
+namespace IODA.Adapters.Portals
 {
     internal class Controller
     {

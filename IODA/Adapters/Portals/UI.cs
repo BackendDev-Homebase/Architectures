@@ -1,4 +1,4 @@
-﻿namespace IODA.Adapters.Portals.Dialogs
+﻿namespace IODA.Adapters.Portals
 {
     internal class UI
     {
