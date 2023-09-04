@@ -1,5 +1,4 @@
-﻿using IODA.Adapters.Portals.Controllers;
-using IODA.Adapters.Portals.Dialogs;
+﻿using IODA.Adapters.Portals;
 using IODA.Adapters.Providers;
 
 namespace IODA
