@@ -15,7 +15,7 @@ namespace Layered2.Presentation
         {
             Console.WriteLine("Please enter your name:");
             var name = Console.ReadLine() ?? string.Empty;
-            var greetingMessage = await _bll.Greet(name);
+            var greetingMessage = await _bll.GetGreetingMessage(name);
             Console.WriteLine(greetingMessage);
         }
     }

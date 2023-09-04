@@ -4,7 +4,7 @@ namespace Layered.BusinesLogic
 {
     internal class BusinessLogicLayer
     {
-        internal async Task<string> Greet(string name)
+        internal async Task<string> GetGreetingMessage(string name)
         {
             var dal = new DataAcessLayer();
             var userCounts = await dal.LoadUserCounts();

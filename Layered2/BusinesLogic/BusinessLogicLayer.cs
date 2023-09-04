@@ -12,7 +12,7 @@ namespace Layered.BusinesLogic
             _dal = dal;
         }
 
-        public async Task<string> Greet(string name)
+        public async Task<string> GetGreetingMessage(string name)
         {
             var userCounts = await _dal.LoadUserCounts();
 

@@ -2,6 +2,6 @@
 {
     internal interface IBusinessLogicLayer
     {
-        internal Task<string> Greet(string name);
+        internal Task<string> GetGreetingMessage(string name);
     }
 }

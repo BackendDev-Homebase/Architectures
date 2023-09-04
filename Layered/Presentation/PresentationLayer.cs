@@ -9,7 +9,7 @@ namespace Layered.Presentation
             Console.WriteLine("Please enter your name:");
             var name = Console.ReadLine() ?? string.Empty;
             var bll = new BusinessLogicLayer();
-            var greetingMessage = bll.Greet(name);
+            var greetingMessage = bll.GetGreetingMessage(name);
             Console.WriteLine(greetingMessage);
         }
     }
